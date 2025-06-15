@@ -202,9 +202,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize with default language
     setLanguage('id');
-});
 
-// 1. Memblokir Klik Kanan
+    // 1. Memblokir Klik Kanan
 document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
 });
@@ -232,3 +231,6 @@ document.onkeydown = function(e) {
     return false;
   }
 };
+});
+
+
