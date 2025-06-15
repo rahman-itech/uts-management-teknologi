@@ -204,17 +204,31 @@ document.addEventListener('DOMContentLoaded', function() {
     setLanguage('id');
 });
 
+// 1. Memblokir Klik Kanan
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+// 2. Memblokir Tombol Shortcut Developer Tools
 document.onkeydown = function(e) {
-    if(event.keyCode == 123) { // F12
-        return false;
-    }
-    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl+Shift+I
-        return false;
-    }
-    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl+Shift+J
-        return false;
-    }
-    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U
-        return false;
-    }
-}
+  // F12
+  if (e.keyCode == 123) {
+    return false;
+  }
+  // Ctrl+Shift+I
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+    return false;
+  }
+  // Ctrl+Shift+C
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+    return false;
+  }
+  // Ctrl+Shift+J
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+    return false;
+  }
+  // Ctrl+U
+  if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+    return false;
+  }
+};
