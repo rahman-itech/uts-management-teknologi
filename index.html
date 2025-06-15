@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="pageTitle">UTS - Manajemen Teknologi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1 data-key="mainTitle">UJIAN TENGAH SEMESTER</h1>
+                <select id="lang-switcher">
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <p class="course-info" data-key="courseName">Mata Kuliah: Manajemen Teknologi</p>
+            <p class="course-info" data-key="lecturerName">Dosen: A. RAHMAN</p>
+        </header>
+
+        <div id="countdown">
+            <p data-key="deadlineInfo">Batas Waktu Pengumpulan Tugas Take-Home (Uraian / Studi Kasus):</p>
+            <div id="timer"></div>
+        </div>
+        
+        <nav class="tab-navigation">
+            <button class="tab-btn active" data-tab="mcq" data-key="tabMCQ">Pilihan Ganda (Latihan)</button>
+            <button class="tab-btn" data-tab="uraian" data-key="tabEssay">Soal Uraian</button>
+            <button class="tab-btn" data-tab="studi-kasus" data-key="tabCaseStudy">Studi Kasus Digital</button>
+        </nav>
+
+        <main>
+            <!-- ======================= TAB 1: PILIHAN GANDA ======================= -->
+            <div id="mcq" class="tab-content active">
+                <h3 data-key="mcqTitle">Bagian A: Pilihan Ganda</h3>
+                <p class="instruction" data-key="mcqInstruction">Pilihlah satu jawaban yang paling tepat. Anda dapat memeriksa jawaban setelah selesai.</p>
+                
+                <div class="mcq-question" data-question="1">
+                    <p><strong data-key="mcq1_q">1. Fokus fundamental dari Manajemen Teknologi (MOT) adalah...</strong></p>
+                    <ul class="options-list">
+                        <li data-key="mcq1_a">a. Mengoptimalkan efisiensi teknis dari setiap perangkat keras dan lunak.</li>
+                        <li data-correct="true" data-key="mcq1_b">b. Mentransformasi fungsi teknologi dari pusat biaya menjadi penggerak nilai strategis.</li>
+                        <li data-key="mcq1_c">c. Mengelola infrastruktur, data, dan jaringan komunikasi organisasi.</li>
+                        <li data-key="mcq1_d">d. Melakukan riset dan pengembangan (R&D) untuk menciptakan teknologi baru.</li>
+                    </ul>
+                </div>
+                
+                <div class="mcq-question" data-question="2">
+                    <p><strong data-key="mcq2_q">2. Perusahaan yang sedang mengevaluasi vendor CRM dan memutuskan antara 'make' vs 'buy' berada pada fase...</strong></p>
+                    <ul class="options-list">
+                        <li data-correct="true" data-key="mcq2_a">a. Fase Seleksi dan Akuisisi (Selection and Acquisition).</li>
+                        <li data-key="mcq2_b">b. Fase Inisiasi dan Pemindaian (Initiation and Scanning).</li>
+                        <li data-key="mcq2_c">c. Fase Implementasi dan Difusi (Implementation and Diffusion).</li>
+                        <li data-key="mcq2_d">d. Fase Pemanfaatan dan Optimalisasi (Exploitation and Optimization).</li>
+                    </ul>
+                </div>
+
+                <div class="mcq-question" data-question="3">
+                    <p><strong data-key="mcq3_q">3. Implementasi sistem ERP untuk merampingkan operasi adalah contoh strategi...</strong></p>
+                    <ul class="options-list">
+                        <li data-key="mcq3_a">a. Strategi Diferensiasi.</li>
+                        <li data-key="mcq3_b">b. Inovasi Model Bisnis Disruptif.</li>
+                        <li data-correct="true" data-key="mcq3_c">c. Strategi Kepemimpinan Biaya.</li>
+                        <li data-key="mcq3_d">d. Aliansi Strategis dengan Pesaing.</li>
+                    </ul>
+                </div>
+                
+                <button id="check-answers-btn" data-key="checkAnswersBtn">Lihat Kunci Jawaban</button>
+            </div>
+
+            <!-- ======================= TAB 2: URAIAN ======================= -->
+            <div id="uraian" class="tab-content">
+                <h3 data-key="essayTitle">Bagian B: Uraian</h3>
+                <p class="instruction" data-key="essayInstruction">Jawablah pertanyaan-pertanyaan berikut dengan jelas, terstruktur, dan komprehensif.</p>
+
+                <button class="accordion-btn" data-key="essayQ1_title">7. Perbedaan Fundamental MOT dan MTI</button>
+                <div class="panel"><p data-key="essayQ1_text">Jelaskan perbedaan fundamental antara <strong>Manajemen Teknologi (MOT)</strong> dan <strong>Manajemen Teknologi Informasi (MTI)</strong>. Berikan satu contoh nyata di sebuah perusahaan untuk memperjelas perbedaan cakupan keduanya.</p></div>
+                
+                <button class="accordion-btn" data-key="essayQ3_title">8. Inovasi Proses & Kepemimpinan Biaya</button>
+                <div class="panel"><p data-key="essayQ3_text">Materi ajar menekankan bahwa teknologi adalah katalisator inovasi. Jelaskan bagaimana <strong>inovasi proses</strong> (contoh: otomatisasi, implementasi ERP) dapat secara langsung mendukung pencapaian strategi <strong>keunggulan kompetitif berbasis kepemimpinan biaya (cost leadership)</strong>.</p></div>
+
+                <button class="accordion-btn" data-key="essayQ4_title">9. Analisis Kegagalan Implementasi Teknologi</button>
+                <div class="panel"><p data-key="essayQ4_text">Mengapa sebuah proyek implementasi teknologi yang canggih dan superior secara teknis bisa mengalami kegagalan di sebuah organisasi? Jelaskan jawaban Anda dengan mengacu pada konsep <strong>manajemen perubahan (change management)</strong> dan minimal <strong>tiga (3) faktor non-teknis</strong> lain yang krusial bagi keberhasilan adopsi teknologi.</p></div>
+            </div>
+
+            <!-- ======================= TAB 3: STUDI KASUS ======================= -->
+            <div id="studi-kasus" class="tab-content">
+                <h3 data-key="caseTitle">Bagian C: Studi Kasus Digital (Tugas Take-Home)</h3>
+                <p class="instruction" data-key="caseInstruction">Pilih <strong>satu</strong> dari platform berikut (Tokopedia, Shopee, atau Blibli) sebagai fokus analisis Anda.</p>
+                
+                <div class="case-study-card">
+                    <h4 data-key="caseObjectTitle">Objek Studi Kasus: Platform E-commerce Indonesia</h4>
+                    <p><strong data-key="caseTask">Tugas Anda:</strong> <span data-key="caseTaskText">Menulis esai studi kasus analitis yang menjawab pertanyaan sentral: <br><strong>"Bagaimana platform pilihan Anda menerapkan prinsip-prinsip MOT untuk membangun dan mempertahankan keunggulan kompetitifnya?"</strong></span></p>
+                    <div class="highlight-note">
+                        <p><strong data-key="caseImportant">Penting:</strong> <span data-key="caseImportantText">Seluruh informasi dapat ditemukan secara online (observasi platform, artikel berita, laporan industri). <strong>Anda tidak perlu melakukan wawancara langsung.</strong></span></p>
+                    </div>
+                </div>
+
+                <h4 data-key="caseStructureTitle">Struktur Esai yang Diharapkan:</h4>
+                <ol class="case-structure">
+                    <li data-key="caseStructure1"><strong>Analisis Platform sebagai Aset Strategis:</strong> Identifikasi peran platform dan strategi keunggulan kompetitif utamanya.</li>
+                    <li data-key="caseStructure2"><strong>Dekonstruksi Inovasi dan Siklus Hidup Fitur:</strong> Analisis satu fitur baru dan satu fitur matang menggunakan kerangka Siklus Hidup Teknologi.</li>
+                    <li data-key="caseStructure3"><strong>Pemetaan Perjalanan Pelanggan:</strong> Petakan customer journey dan jelaskan mengapa ini adalah wujud Transformasi Digital sejati.</li>
+                    <li data-key="caseStructure4"><strong>Rekomendasi Strategis:</strong> Berikan satu usulan strategis untuk pengembangan platform di masa depan.</li>
+                </ol>
+                 <h4 data-key="caseFormatTitle">Format & Ketentuan:</h4>
+                 <p data-key="caseFormatText">Format PDF, 5-7 halaman (tidak termasuk sampul & daftar pustaka), Font Times New Roman 12 / Calibri 11, spasi 1.5.</p>
+            </div>
+        </main>
+        <footer>
+            <p data-key="footerText">Ujian Tengah Semester - Manajemen Teknologi</p>
+        </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
