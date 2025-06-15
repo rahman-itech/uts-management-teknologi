@@ -203,3 +203,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize with default language
     setLanguage('id');
 });
+
+document.onkeydown = function(e) {
+    if(event.keyCode == 123) { // F12
+        return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl+Shift+I
+        return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl+Shift+J
+        return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U
+        return false;
+    }
+}
